@@ -25,9 +25,9 @@ section{
     position: relative;
     background-size: cover;
     overflow: hidden;
-    animation: animate 16s ease-in-out infinite;
-    -moz-animation: animate 16s ease-in-out infinite;
-    -webkit-animation: animate 16s ease-in-out infinite;
+    animation: animate 40s ease-in-out infinite;
+    -moz-animation: animate 40s ease-in-out infinite;
+    -webkit-animation: animate 40s ease-in-out infinite;
 
 }
 @keyframes animate{
