@@ -1,0 +1,103 @@
+.footer{
+    width: 100%;
+    color: #000;
+    font-family: "Open Sans";
+    position: relative;
+    background-color: #000;
+    list-style-type: none;
+}
+footer{
+    background-color: rgb(34,34,34);
+    color: #fff;
+    padding-left: 20px;
+}
+.footer-info{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0;
+}
+.footer-info .footer_wd{
+    padding: 0 15px;
+}
+.footer-info h2{
+    margin-bottom: 20px;
+}
+.about,.Contact {
+    width: 40%;
+}
+.links{
+    width: 20%;
+}
+.social-links{
+    margin-top: 30px;
+}
+.social-links ul{
+    display: flex;
+}
+.social-links ul li a{
+    display: inline-block;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    padding-top: 12px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+.social-links ul li a:hover{
+    background-color: #fff;
+    color: #000;
+
+}
+
+.links ul li a{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+.links ul li a:hover{
+    color: #000;
+}
+.Contact ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+.Contact ul li span{
+    margin-right: 15px;
+}
+.Contact ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (max-width: 992px){
+    .about, .Contact{
+        width: 35%;
+    }
+    .link{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 767px){
+    .about, .Contact ,.link{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .about p{
+        font-size: 16px;
+    }
+    .footer-info{
+        flex-direction: column;
+    }
+    .social-links ul li a{
+        margin-right: 12px;
+    }
+}

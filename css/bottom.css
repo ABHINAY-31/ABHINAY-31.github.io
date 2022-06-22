@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body-5{
+    font-family: Verdana, sans-serif;
+    padding-bottom: 8px;
+}
+.Slides{
+    display: none;
+}
+.Slides img{
+    height: 500px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+.show-container{
+    padding-top: 25px;
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+}
+.prev-1 , .next-1{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 24px;
+    transition: 0.6s;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next-1{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev-1:hover , .next-1:hover{
+    /* background-color: rgba(65, 35, 35, 0.8); */
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+}
+.text-1{
+    columns: #f2f2f2;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 8px;
+    color: black;
+    font-weight: 900;
+}
+.dot-1{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #717171;
+    /* background: #bbb; */
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active , .dot-1:hover{
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+}
+.fade-1{
+    -webkit-animation-duration: 3s;
+    animation: fade;
+    animation-duration: 3s;
+}
+@-webkit-keyframes fade{
+    from{opacity: .8}
+    to{opacity: 1}
+}
+@keyframes fade{
+    from{opacity: .8}
+    to{opacity: 1}
+}
+
+@media only screen and (max-width: 300px)
+{
+    .prev-1 , .next-1 , .text-1{
+        font-size: 11px;
+    }
+    .dot-1{
+        height: 10px;
+        width: 10px;
+    }
+    .Slides img{
+        height: 320px;
+    }
+}
+@media only screen and (max-width: 500px)
+{
+    .prev-1 , .next-1 , .text-1{
+        font-size: 14px;
+    }
+    .show-container{
+        max-width: 90%;
+    }
+    .Slides img{
+        height: 400px;
+    }
+}
+
+
+

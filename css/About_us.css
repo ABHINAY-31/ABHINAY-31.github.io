@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body-about{
+    overflow: hidden;
+    height: fit-content;
+}
+.Section-4{
+    width: 100%;
+}
+.Section-4 .Container-4{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+.Container-4 .Title-4{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.Container-4 .Title-4 h1{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(92, 44, 73);
+}
+.Container-4 .Title-4 h1::after{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: rgb(92, 44, 73);
+    display: block;
+    margin: auto;
+}
+.Content-4{
+    float: left;
+    width: 55%;
+}
+.Content-4 .Article-4 h3{
+    color: rgb(45, 57, 59);
+    font-size: 19px; 
+    margin-bottom: 20px; 
+}
+.Content-4 .Article-4 p{
+    font-size: 19px;
+}
+.Content-4 .Article-4 .Button-4{
+    margin-top: 50px;
+}
+.Content-4 .Article-4 .Button-4 a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color: rgb(141, 85, 60);
+    border-radius: 40px;
+    color: black;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+.Content-4 .Article-4 .Button-4 a:hover{
+    background-color: orange;
+    transition: 0.6s ease-in-out;
+}
+.image_column{
+    float: right;
+    width: 40%;
+}
+.image_column img{
+    width: 100%;
+    height: auto;
+}
+.Container-4 .Social-link-4 {
+    width: 100%;
+    clear:both;
+    margin-top: 50px;
+    text-align: center;
+    display: inline-block;
+}
+.Container-4 .Social-link-4 i{
+    color: black;
+    font-size: 24px;
+    height: 45px;
+    width: 45px;
+    border-radius: 20%;
+    line-height: 45px;
+    text-align: center;
+    background-color: blanchedalmond;
+    margin: 0px 5px;
+}
+.Container-4 .Social-link-4 i:hover{
+    color: #3f0202;
+    background-color: rgb(173, 149, 99);
+    transition: 0.6s ease-in-out;
+    transform: rotate(-360deg);
+}
+@media (max-width: 768px)
+{
+    .Section-4 .Container-4{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .Content-4{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image_column{
+        float: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .image_column img{
+        width: 100%;
+        height: auto;
+    }
+    .Container-4 .Title-4 h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .Content-4 .Article-4 .Button-4{
+        text-align: center; 
+    }
+    .Content-4 .Article-4 .Button-4 a{
+        padding: 6px 15px;
+        font-size: 17px;
+    }
+    .Container-4 .Social-link-4 i{
+        font-size: 20px;
+        height: 35px;
+        width: 35px;
+    }
+}
