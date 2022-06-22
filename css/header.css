@@ -26,10 +26,41 @@ section{
     background-size: cover;
     overflow: hidden;
     animation: animate 16s ease-in-out infinite;
-    
+    -moz-animation: animate 16s ease-in-out infinite;
+    -webkit-animation: animate 16s ease-in-out infinite;
 }
 @keyframes animate{
 
+    0%,100%{
+        /* background-image:linear-gradient(rgba(34, 42, 82, 0.7),rgba(16, 21, 52, 0.7)), url('../images/1.jpg'); */
+        background-image: url("../images/1.jpg");
+    }
+    25%{
+        background-image: url("../images/2.jpg");
+    }
+    50%{ 
+        background-image: url("../images/3.jpg");
+    }
+    75%{
+        background-image: url("../images/4.jpg");
+    }
+}
+@-moz-keyframes animate{
+    0%,100%{
+        /* background-image:linear-gradient(rgba(34, 42, 82, 0.7),rgba(16, 21, 52, 0.7)), url('../images/1.jpg'); */
+        background-image: url("../images/1.jpg");
+    }
+    25%{
+        background-image: url("../images/2.jpg");
+    }
+    50%{ 
+        background-image: url("../images/3.jpg");
+    }
+    75%{
+        background-image: url("../images/4.jpg");
+    }
+}
+@-webkit-keyframes animate{
     0%,100%{
         /* background-image:linear-gradient(rgba(34, 42, 82, 0.7),rgba(16, 21, 52, 0.7)), url('../images/1.jpg'); */
         background-image: url("../images/1.jpg");
