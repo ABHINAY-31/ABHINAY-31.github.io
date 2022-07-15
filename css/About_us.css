@@ -69,7 +69,8 @@
 }
 .image_column img{
     width: 100%;
-    height: auto;
+    height: 400px;
+    /* height: auto; */
 }
 .Container-4 .Social-link-4 {
     width: 100%;
